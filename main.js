@@ -20,11 +20,13 @@ export function renderProducts(list = products,parent=elWrapper) {
   list.forEach((product) => {
     const newTemp = newTemplate.content.cloneNode(true);
     const elImg = newTemp.querySelector(".img", newTemp);
+    elImg.dataset.id = product.id;
     const elTitel = newTemp.querySelector(".p", newTemp);
     const elRealPrice = newTemp.querySelector(".real-price", newTemp);
     const elSkitka = newTemp.querySelector(".skitka", newTemp);
     const elKarzina = newTemp.querySelector(".cart", newTemp);
     elKarzina.dataset.id = product.id;
+   
     product.elCart
       ? (elKarzina.src = "./img/cart2.png")
       : (elKarzina.src = "./img/cart.svg");
@@ -90,24 +92,16 @@ elWrapper.addEventListener("click", (evt) => {
   elBtn.addEventListener("click", (e) => {
     e.preventDefault();
     if (elInp1.value !== "" && elInp2.value !== "") {
-      const filtrPrice = products.filter(
-        (product) =>
-          product.discountPrice > elInp1.value ||
-          product.discountPrice < elInp2.value
+     
+      const filtrPrice = products.filter((product) =>{
+        
+         return( product.price > +elInp1.value &&
+          product.price < +elInp2.value)}
       );
+      console.log(filtrPrice);
       renderProducts(filtrPrice);
     }
   });
 
 
-  // elBtn.addEventListener("click", (e) => {
-  //   e.preventDefault();
-  //   if (elinp1.value !== "" && elinp2.value !== "") {
-  //     const filtr = products.filter(
-  //       (product) =>
-  //         product.price >elinp1.value &&
-  //         product.price < elinp2.value
-  //     );
-  //     renderProducts(filtr);
-  //   }
-  // });
+  

@@ -1,157 +1,555 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<style>
-    a{
-        text-decoration: none;
-        color: #161c24;
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <style>
+    a {
+      text-decoration: none;
+      color: #161c24;
     }
-</style>
-<body>
-        
-        <header>
-            <div class="nav-div">
-                <p></p>
-                <p>Скидка 10% по промокоду “ZAMOK” на все заказы до 10.09</p>
-                <p>Обратный звонок</p>
-            </div>
+  </style>
+  <body>
+    <header>
+      <div class="nav-div">
+        <p></p>
+        <p>Скидка 10% по промокоду “ZAMOK” на все заказы до 10.09</p>
+        <p>Обратный звонок</p>
+      </div>
 
-            <div class="container">
-                <nav>
-                    <div class="div-img">
-                     <img src="./img/Logo.png" alt="">
-                    </div>
-                     <ul  class="div-ul1" style="display: flex;">
-                         <li><a href="./index.html" >Главная</a></li>
-                         <li><select name="" id=""><option value="">Каталог</option></select></li>
-                         <li><a href="./index.html">Оптовая продажа</a></li>
-                         <li><a href="./index.html">О нас</a></li>
-                     </ul>
-     
-                     <ul class="div-ul2" style="display: flex;">
-                         <li style="display: flex;"><i class="fa-solid fa-phone" style="color: #4295e3; margin-right: 10px; padding-top: 8px;"></i><p>+7 (966) 55 88 499</p></li>
-                         <li><i class="fa-regular fa-heart"></i></li>
-                         <li><a href="./carzinka.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                     </ul>
-                 </nav>
-            </div>
-        </header>
+      <div class="container">
+        <nav>
+          <div class="div-img">
+            <img src="./img/Logo.png" alt="" />
+          </div>
+          <ul class="div-ul1" style="display: flex">
+            <li><a href="./index.html">Главная</a></li>
+            <li>
+              <select name="" id="">
+                <option value="">Каталог</option>
+              </select>
+            </li>
+            <li><a href="./index.html">Оптовая продажа</a></li>
+            <li><a href="./index.html">О нас</a></li>
+          </ul>
 
-        <div class="container">
-            <div class="p">
-                <p>Главная <span style="color: #8c8c8c;">/ Каталог</span></p>
-            </div>
-            <div class="div-h1" style="display: flex; align-items: center;gap: 20px;">
-                <h3>Накладные электронные замки</h3><span>  (854)</span>
+          <ul class="div-ul2" style="display: flex">
+            <li style="display: flex">
+              <i
+                class="fa-solid fa-phone"
+                style="color: #4295e3; margin-right: 10px; padding-top: 8px"
+              ></i>
+              <p>+7 (966) 55 88 499</p>
+            </li>
+            <li><i class="fa-regular fa-heart"></i></li>
+            <li>
+              <a href="./carzinka.html"
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-            </div><br>
+    <div class="container">
+      <div class="p">
+        <p>Главная <span style="color: #8c8c8c">/ Каталог</span></p>
+      </div>
+      <div class="div-h1" style="display: flex; align-items: center; gap: 20px">
+        <h3>Накладные электронные замки</h3>
+        <span> (854)</span>
+      </div>
+      <br />
 
-            <div class="main">
-                <button type="">Сбросить фильтры</button>
-                <p>Электронные кодовые замки <i class="fa-solid fa-xmark" style="color: #e34285;"></i></p>
-                <select name="Gross" id="categories-list"></select>
-            </div>
+      <div class="main">
+        <button type="">Сбросить фильтры</button>
+        <p>
+          Электронные кодовые замки
+          <i class="fa-solid fa-xmark" style="color: #e34285"></i>
+        </p>
+        <select name="Gross" id="categories-list"></select>
+      </div>
 
-            <br><br>
-<div class="div">
-    
-    <div class="div1">
-        <h3>Фильтр</h3><br><br>
-        <h6 style="justify-content: space-between; display: flex;">Цена <span><i class="fa-solid fa-chevron-up" style="color: #4295e3;"></i></span></h6><br>
-        <div class="inp">
-           <form ><input class="inp-1" type="number">
-            <input class="inp-2" type="number">
-            <button class="btn" style="border: 0; border-radius: 5px; width: 256px; height: 30px;">click</button></form>
+      <br /><br />
+      <div class="div">
+        <div class="div1">
+          <h3>Фильтр</h3>
+          <br /><br />
+          <h6 style="justify-content: space-between; display: flex">
+            Цена
+            <span
+              ><i class="fa-solid fa-chevron-up" style="color: #4295e3"></i
+            ></span>
+          </h6>
+          <br />
+          <div class="inp">
+            <form>
+              <input class="inp-1" type="number" />
+              <input class="inp-2" type="number" />
+              <button
+                class="btn"
+                style="
+                  border: 0;
+                  border-radius: 5px;
+                  width: 256px;
+                  height: 30px;
+                "
+              >
+                click
+              </button>
+            </form>
+          </div>
+          <hr />
+          <div class="filter">
+            <h6 style="justify-content: space-between; display: flex">
+              Особенности
+              <span
+                ><i class="fa-solid fa-chevron-down" style="color: #928a9e"></i
+              ></span>
+            </h6>
+            <hr />
+            <h6 style="justify-content: space-between; display: flex">
+              Цвет
+              <span
+                ><i class="fa-solid fa-chevron-down" style="color: #928a9e"></i
+              ></span>
+            </h6>
+            <hr />
+            <h6 style="justify-content: space-between; display: flex">
+              Материал
+              <span
+                ><i class="fa-solid fa-chevron-down" style="color: #928a9e"></i
+              ></span>
+            </h6>
+            <hr />
+            <h6 style="justify-content: space-between; display: flex">
+              Размеры
+              <span
+                ><i class="fa-solid fa-chevron-down" style="color: #928a9e"></i
+              ></span>
+            </h6>
+            <hr />
+          </div>
         </div>
-        <hr>
-        <div class="filter">
-            <h6 style="justify-content: space-between; display: flex;">Особенности  <span><i class="fa-solid fa-chevron-down" style="color: #928a9e;"></i></span></h6><hr>
-            <h6 style="justify-content: space-between; display: flex;">Цвет  <span><i class="fa-solid fa-chevron-down" style="color: #928a9e;"></i></span></h6><hr>
-            <h6 style="justify-content: space-between; display: flex;">Материал  <span><i class="fa-solid fa-chevron-down" style="color: #928a9e;"></i></span></h6><hr>
-            <h6 style="justify-content: space-between; display: flex;">Размеры  <span><i class="fa-solid fa-chevron-down" style="color: #928a9e;"></i></span></h6><hr>
-        </div>
-
-
-    </div>
-    <div class="div2">
-        
-        <div class="div-container1">
+        <div class="div2">
+          <div class="div-container1">
             <div class="cards"></div>
             <template id="template">
-            <div class="div2-1">
-                <img src="./img/1.png" class="img" width="274px" alt="">
-           <div class="div2-2">
-            <p class="hert">⭐⭐⭐<i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><span style="margin-left: 15px;">(12) отзывов</span></p>
-            <p class="p" style="font-size: 18px; color: #46505c;">Вариативный замок Golden Soft для отеля</p>
-    
-            <div class="div2-h4" style="display: flex;justify-content: space-between;">
-                <h4 class="skitka">33 000₽</h4> <span style="text-decoration: line-through; font-size: 20px; font-weight: 400; color: #46505c; padding-right: 50px;" class="real-price">39 000₽</span>
-                <img  class="cart"src="./img/cart.svg" alt="">
+              <div class="div2-1">
+                <a href="./singl.html">
+                  <img src="./img/1.png" class="img" width="274px" alt=""
+                /></a>
+                <div class="div2-2">
+                  <p class="hert">
+                    ⭐⭐⭐<i class="fa-regular fa-star"></i
+                    ><i class="fa-regular fa-star"></i
+                    ><span style="margin-left: 15px">(12) отзывов</span>
+                  </p>
+                  <p class="p" style="font-size: 18px; color: #46505c">
+                    Вариативный замок Golden Soft для отеля
+                  </p>
+
+                  <div
+                    class="div2-h4"
+                    style="display: flex; justify-content: space-between"
+                  >
+                    <h4 class="skitka">33 000₽</h4>
+                    <span
+                      style="
+                        text-decoration: line-through;
+                        font-size: 20px;
+                        font-weight: 400;
+                        color: #46505c;
+                        padding-right: 50px;
+                      "
+                      class="real-price"
+                      >39 000₽</span
+                    >
+                    <img class="cart" src="./img/cart.svg" alt="" />
+                  </div>
+                  <div class="div2-3">
+                    <div class="x">
+                      <i
+                        class="fa-solid fa-xmark"
+                        style="color: #e34285; width: 10px; height: 10px"
+                      ></i>
+                      <p>Нет в наличии</p>
+                    </div>
+                    <button>SALE</button>
+                  </div>
+                </div>
+              </div>
+            </template>
+          </div>
+        </div>
+      </div>
+
+      <div class="nedavno">
+        <h1>Вы недавно просмотрели</h1>
+        <div>
+          <i
+            class="fa-solid fa-angle-left"
+            style="color: #5e5e5e; margin-right: 20px"
+          ></i
+          ><i class="fa-solid fa-angle-right"></i>
+        </div>
+      </div>
+
+      <div class="corusel">
+        <div style="margin-left: 50px" class="div2-1">
+          <img src="./img/1.png" class="img" width="274px" alt="" />
+          <div class="div2-2">
+            <p class="hert">
+              ⭐⭐⭐<i class="fa-regular fa-star"></i
+              ><i class="fa-regular fa-star"></i
+              ><span style="margin-left: 15px">(12) отзывов</span>
+            </p>
+            <p class="p" style="font-size: 18px; color: #46505c">
+              Вариативный замок Golden Soft для отеля
+            </p>
+
+            <div
+              class="div2-h4"
+              style="display: flex; justify-content: space-between"
+            >
+              <h4 class="skitka">33 000₽</h4>
+              <span
+                style="
+                  text-decoration: line-through;
+                  font-size: 20px;
+                  font-weight: 400;
+                  color: #46505c;
+                  padding-right: 50px;
+                "
+                class="real-price"
+                >39 000₽</span
+              >
+              <img class="cart" src="./img/cart.svg" alt="" />
             </div>
-           <div class="div2-3">
-            <div class="x" ><i class="fa-solid fa-xmark" style="color: #e34285; width: 10px; height: 10px;"></i> <p>Нет в наличии</p></div>
-            <button>SALE</button>
-           </div>
-           </div>
-            
+            <div class="div2-3">
+              <div class="x">
+                <i
+                  class="fa-solid fa-xmark"
+                  style="color: #e34285; width: 10px; height: 10px"
+                ></i>
+                <p>Нет в наличии</p>
+              </div>
+              <button>SALE</button>
+            </div>
+          </div>
         </div>
-           </template>
-    </div>
-       
+        <div style="margin-left: 50px" class="div2-1">
+          <img src="./img/1.png" class="img" width="274px" alt="" />
+          <div class="div2-2">
+            <p class="hert">
+              ⭐⭐⭐<i class="fa-regular fa-star"></i
+              ><i class="fa-regular fa-star"></i
+              ><span style="margin-left: 15px">(12) отзывов</span>
+            </p>
+            <p class="p" style="font-size: 18px; color: #46505c">
+              Вариативный замок Golden Soft для отеля
+            </p>
 
-
-
-
-
-
-
-
-
-
-    </div>
-
-
-</div>
-
-
-
-<div class="nedavno">
-    <h1>Вы недавно просмотрели</h1>
-    <div> <i class="fa-solid fa-angle-left" style="color: #5e5e5e; margin-right: 20px;"></i><i class="fa-solid fa-angle-right"></i></div>
-</div>
-
-
-
-
-
-
-<div class="div2-1">
-    <img src="./img/1.png" class="img" width="274px" alt="">
-<div class="div2-2">
-<p class="hert">⭐⭐⭐<i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><span style="margin-left: 15px;">(12) отзывов</span></p>
-<p class="p" style="font-size: 18px; color: #46505c;">Вариативный замок Golden Soft для отеля</p>
-
-<div class="div2-h4" style="display: flex;justify-content: space-between;">
-    <h4 class="skitka">33 000₽</h4> <span style="text-decoration: line-through; font-size: 20px; font-weight: 400; color: #46505c; padding-right: 50px;" class="real-price">39 000₽</span>
-    <img  class="cart"src="./img/cart.svg" alt="">
-</div>
-<div class="div2-3">
-<div class="x" ><i class="fa-solid fa-xmark" style="color: #e34285; width: 10px; height: 10px;"></i> <p>Нет в наличии</p></div>
-<button>SALE</button>
-</div>
-</div>
-
-</div>
+            <div
+              class="div2-h4"
+              style="display: flex; justify-content: space-between"
+            >
+              <h4 class="skitka">33 000₽</h4>
+              <span
+                style="
+                  text-decoration: line-through;
+                  font-size: 20px;
+                  font-weight: 400;
+                  color: #46505c;
+                  padding-right: 50px;
+                "
+                class="real-price"
+                >39 000₽</span
+              >
+              <img class="cart" src="./img/cart.svg" alt="" />
+            </div>
+            <div class="div2-3">
+              <div class="x">
+                <i
+                  class="fa-solid fa-xmark"
+                  style="color: #e34285; width: 10px; height: 10px"
+                ></i>
+                <p>Нет в наличии</p>
+              </div>
+              <button>SALE</button>
+            </div>
+          </div>
         </div>
+        <div style="margin-left: 50px" class="div2-1">
+          <img src="./img/1.png" class="img" width="274px" alt="" />
+          <div class="div2-2">
+            <p class="hert">
+              ⭐⭐⭐<i class="fa-regular fa-star"></i
+              ><i class="fa-regular fa-star"></i
+              ><span style="margin-left: 15px">(12) отзывов</span>
+            </p>
+            <p class="p" style="font-size: 18px; color: #46505c">
+              Вариативный замок Golden Soft для отеля
+            </p>
+
+            <div
+              class="div2-h4"
+              style="display: flex; justify-content: space-between"
+            >
+              <h4 class="skitka">33 000₽</h4>
+              <span
+                style="
+                  text-decoration: line-through;
+                  font-size: 20px;
+                  font-weight: 400;
+                  color: #46505c;
+                  padding-right: 50px;
+                "
+                class="real-price"
+                >39 000₽</span
+              >
+              <img class="cart" src="./img/cart.svg" alt="" />
+            </div>
+            <div class="div2-3">
+              <div class="x">
+                <i
+                  class="fa-solid fa-xmark"
+                  style="color: #e34285; width: 10px; height: 10px"
+                ></i>
+                <p>Нет в наличии</p>
+              </div>
+              <button>SALE</button>
+            </div>
+          </div>
+        </div>
+        <div style="margin-left: 50px" class="div2-1">
+          <img src="./img/1.png" class="img" width="274px" alt="" />
+          <div class="div2-2">
+            <p class="hert">
+              ⭐⭐⭐<i class="fa-regular fa-star"></i
+              ><i class="fa-regular fa-star"></i
+              ><span style="margin-left: 15px">(12) отзывов</span>
+            </p>
+            <p class="p" style="font-size: 18px; color: #46505c">
+              Вариативный замок Golden Soft для отеля
+            </p>
+
+            <div
+              class="div2-h4"
+              style="display: flex; justify-content: space-between"
+            >
+              <h4 class="skitka">33 000₽</h4>
+              <span
+                style="
+                  text-decoration: line-through;
+                  font-size: 20px;
+                  font-weight: 400;
+                  color: #46505c;
+                  padding-right: 50px;
+                "
+                class="real-price"
+                >39 000₽</span
+              >
+              <img class="cart" src="./img/cart.svg" alt="" />
+            </div>
+            <div class="div2-3">
+              <div class="x">
+                <i
+                  class="fa-solid fa-xmark"
+                  style="color: #e34285; width: 10px; height: 10px"
+                ></i>
+                <p>Нет в наличии</p>
+              </div>
+              <button>SALE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br /><br />
+
+      <div class="eget">
+        <div class="eget1">
+          <h1>Eget quis quam metus, scelerisque.</h1>
+          <br />
+          <p>
+            Odio felis sit leo, massa, mauris, at pulvinar ultrices. Eu
+            porttitor molestie massa porttitor. Quisque at turpis ut proin eu et
+            magna etiam rhoncus.
+          </p>
+          <div class="" style="display: flex; gap: 80px">
+            <div class="">
+              <input type="checkbox" /><b
+                style="font-weight: normal; margin-left: 10px"
+                >Межкомнатую дверь</b
+              >
+            </div>
+            <div class="">
+              <input type="checkbox" /><b
+                style="font-weight: normal; margin-left: 10px"
+                >Деревянную дверь</b
+              >
+            </div>
+          </div>
+          <div class="" style="display: flex; gap: 80px">
+            <div class="">
+              <input type="checkbox" /><b
+                style="font-weight: normal; margin-left: 10px"
+                >Межкомнатую дверь</b
+              >
+            </div>
+            <div class="">
+              <input type="checkbox" /><b
+                style="font-weight: normal; margin-left: 10px"
+              ></b
+              >Деревянную дверь
+            </div>
+          </div>
+          <br />
+          <p>
+            Ac risus neque pulvinar tincidunt est. Tristique imperdiet viverra
+            interdum in leo. Nullam ullamcorper id enim fermentum integer
+            praesent bibendum. In ullamcorper purus scelerisque malesuada et
+            egestas. Ac dictumst mauris sed facilisis.
+          </p>
+        </div>
+        <div class="eget2">
+          <img src="./img/4.png" alt="" />
+        </div>
+      </div>
+      <br /><br />
+      <div class="eget">
+        <div class="eget2">
+          <img src="./img/5.png" alt="" />
+        </div>
+        <div class="eget1">
+          <h1>Eget quis quam metus, scelerisque.</h1>
+          <br />
+          <p>
+            Odio felis sit leo, massa, mauris, at pulvinar ultrices. Eu
+            porttitor molestie massa porttitor. Quisque at turpis ut proin eu et
+            magna etiam rhoncus.
+          </p>
+          <br />
+          <p>
+            Ac risus neque pulvinar tincidunt est. Tristique imperdiet viverra
+            interdum in leo. Nullam ullamcorper id enim fermentum integer
+            praesent bibendum. In ullamcorper purus scelerisque malesuada et
+            egestas. Ac dictumst mauris sed facilisis.
+          </p>
+        </div>
+      </div>
     </div>
+    <br /><br />
+
+    <div class="vam">
+      <div class="vam1">
+        <h1>Мы Вам перезвоним</h1>
+        <br />
+        <p>
+          Если у вас возникли какие-то вопросы или проблемы, заполните <br />
+          форму и мы Вам перезвоним.
+        </p>
+        <div class="vam2">
+          <input
+            style="
+              width: 200px;
+              height: 40px;
+              border: 0;
+              background-color: #e9eef5;
+            "
+            placeholder="Ваше имя"
+            type="text"
+          />
+          <input
+            style="
+              width: 200px;
+              height: 40px;
+              border: 0;
+              background-color: #e9eef5;
+            "
+            placeholder="Ваш Email"
+            type="email"
+          />
+          <button
+            style="
+              background-color: #4295e3;
+              color: #e3e3e3;
+              border: 0;
+              width: 200px;
+              height: 40px;
+            "
+          >
+            Отправить
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <ul class="ul-1">
+          <li class="li">
+            <img src="./img/Logo.png" width="105px" height="88px" alt="" />
+            <br /><br /><br /><br /><br /><br /><br /><br /><br />
+            <i class="fa-solid fa-w" style="font-size: 26px"></i>
+            <i class="fa-brands fa-twitter" style="font-size: 26px;margin-left: 10px;"></i>
+            <i class="fa-brands fa-facebook-f" style="font-size: 26px;margin-left: 10px;"></i>
+          </li>
+          <li class="li">
+            <p style="font-weight: 500;">Навигация</p><br>
+            <p>Главная</p>
+            <p>Каталог</p>
+            <p>Оптовая продажа</p>
+            <p>О нас</p>
+          </li>
+          <li class="li">
+            <p style="font-weight: 500;">Наши контакты</p><br>
+            <p>Телефоны</p>
+            <p>+7 (988) 565 00 38</p>
+            <p>+375 33 662 82 56</p>
+            <p>Email</p>
+            <p>vladpertcev@mail.ru</p>
+            <p>korobko416@gmail.com</p>
+          </li>
+          <li class="li">
+            <p style="font-weight: 500;">Наш адрес</p><br>
+            <p>Россия,</p>
+            <p>Ростов-на-Дону</p>
+            <p>ул. Богачева, 16</p>
+          </li>
+          <li class="li">
+            <p style="font-weight: 500;">информация</p><br>
+            <p>Доставка и оплата</p>
+            <p>Гарантии</p>
+            <p>Возврат товара</p>
+          </li>
+        </ul><hr style="color: #203545;border: 2px solid #203545; margin-top: -50px;">
+    </div>
+    <p style="text-align: center; color: #9ea8b0;">© 2021 Golden Soft All rights reserved.</p>
+</footer>
     <script type="module" src="./main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
